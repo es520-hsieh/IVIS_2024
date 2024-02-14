@@ -9,12 +9,30 @@ body, html {
     height: 100%;
   }
   
-  .filter-sidebar {
+  .sidebar-section {
+    
+    display: flex;
+    flex-direction: column;
+
     width: 20%; /* Adjust width as necessary */
     background-color: #f4f4f4; /* Light grey background */
     padding: 20px; /* Spacing inside the sidebar */
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow to the sidebar */
     overflow-y: auto; /* In case of scrolling */
+  }
+
+  .sidebar-section > section {
+    flex: 1;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .filter {
+    background-color: #eaeaea; /* Light grey background */
+  }
+
+  .about {
+    background-color: #ebebeb; /* Light grey background */
   }
   
   .visualization-section {
@@ -48,7 +66,7 @@ body, html {
       flex-direction: column;
     }
   
-    .filter-sidebar {
+    .sidebar {
       width: 100%;
       height: auto;
     }
