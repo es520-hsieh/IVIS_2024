@@ -1,0 +1,78 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .app-container {
+    display: flex;
+    height: 100%;
+  }
+  
+  .sidebar-section {
+    
+    display: flex;
+    flex-direction: column;
+
+    width: 20%; /* Adjust width as necessary */
+    background-color: #f4f4f4; /* Light grey background */
+    padding: 20px; /* Spacing inside the sidebar */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow to the sidebar */
+    overflow-y: auto; /* In case of scrolling */
+  }
+
+  .sidebar-section > section {
+    flex: 1;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .filter {
+    background-color: #eaeaea; /* Light grey background */
+  }
+
+  .about {
+    background-color: #ebebeb; /* Light grey background */
+  }
+  
+  .visualization-section {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .visualization-section > section {
+    flex: 1;
+    padding: 20px;
+    border-bottom: 1px solid #ccc; /* Optional: adds a subtle separator */
+  }
+  
+  /* Specific styles for each visualization section */
+  .map-container {
+    background-color: #e6e6e6; /* Slightly different grey for the map */
+  }
+  
+  .chart-container {
+    background-color: #d9d9d9; /* Slightly different grey for the chart */
+  }
+  
+  .timeline-container {
+    background-color: #cccccc; /* Slightly different grey for the timeline */
+  }
+  
+  /* Add media queries for responsiveness if needed */
+  @media (max-width: 768px) {
+    .app-container {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      height: auto;
+    }
+  
+    .visualization-section > section {
+      height: 300px; /* Fixed height for small screens, adjust as necessary */
+    }
+  }
+  
